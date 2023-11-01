@@ -3,7 +3,7 @@ package INF3055.concept;
 public class Voiture{
     //attribut
     private String nom;
-    private int puisance;
+    private int puissance;
     private boolean estDemarrer;
     private double vitesse;
 
@@ -18,7 +18,7 @@ public class Voiture{
         return puissance;
     }
 
-    public demarre(){
+    public void demarre(){
         estDemarrer = true;
     }
 
