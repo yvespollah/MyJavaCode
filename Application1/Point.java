@@ -1,5 +1,7 @@
 package Application1;
 
+
+
 public class Point{
     private double x;
     private double y;
@@ -29,8 +31,8 @@ public class Point{
             y = y + dy;
         }
 
-        public Afficher(Point point){
-            System.out.println("Les coordonnees du point est (" +point.x+","+point.y+")");
+        public void Afficher(){
+            System.out.println("Les coordonnees du point est (" +x+","+y+")");
         }
 
           // Méthode pour calculer la distance entre le point actuel et un autre point donné
