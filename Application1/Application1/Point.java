@@ -1,7 +1,5 @@
 package Application1;
 
-
-
 public class Point{
     private double x;
     private double y;
