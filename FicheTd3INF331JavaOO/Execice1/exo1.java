@@ -41,19 +41,31 @@ public static class Pointcol extends Point{
       this.couleur = color;
     }
 
-    public void afficheCol(){
+    public void Afficher(){
       System.out.println("je suis un point de coordonnees "+abscisse +" et " + ordonnee);
       System.out.println("jai une couleur "+couleur);
     }
 }
 
 public static void main(String[] args) {
+   int i;
+
+   Point[] tableauHeterogene = new Point[5];
+   tableauHeterogene[0] = new Point(1.0, 2.0);
+   tableauHeterogene[1] = new Pointcol(3.0, 4.0, (byte) 1);
+   tableauHeterogene[2] = new Point(5.0, 6.0);
+   tableauHeterogene[3] = new Pointcol(7.0, 8.0, (byte) 2);
+   tableauHeterogene[4] = new Point(9.0, 10.0);
+
+   for(i=0;i<tableauHeterogene.length;i++){
+      tableauHeterogene[i].Afficher();
+   }
 
    Pointcol point1 =  new Pointcol(2,4,(byte)1);
    
-   point1.afficheCol();
+   point1.Afficher();
    point1.deplacer(1, 2);
-   point1.afficheCol();
+   point1.Afficher();
 
    Point point2 =  new Point(2,4);
    point2.Afficher();
