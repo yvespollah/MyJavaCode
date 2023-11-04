@@ -27,6 +27,10 @@ public class exo1{
         System.out.println("je suis un point de coordonnees "+abscisse +" et " + ordonnee);
      }
 
+     public void identifie() {
+      System.out.println("Je suis un point");
+  }
+
    }
 
 public static class Pointcol extends Point{
@@ -41,10 +45,11 @@ public static class Pointcol extends Point{
       this.couleur = color;
     }
 
-    public void Afficher(){
-      System.out.println("je suis un point de coordonnees "+abscisse +" et " + ordonnee);
-      System.out.println("jai une couleur "+couleur);
-    }
+    public void identifie() {
+      System.out.println("Je suis un point coloré de couleur \"" + couleur + "\"");
+  }
+
+ 
 }
 
 public static void main(String[] args) {
@@ -58,7 +63,7 @@ public static void main(String[] args) {
    tableauHeterogene[4] = new Point(9.0, 10.0);
 
    for(i=0;i<tableauHeterogene.length;i++){
-      tableauHeterogene[i].Afficher();
+      tableauHeterogene[i].identifie();
    }
 
    Pointcol point1 =  new Pointcol(2,4,(byte)1);
